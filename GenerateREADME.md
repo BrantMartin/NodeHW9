@@ -1,5 +1,5 @@
 
-# Title: Node.js Homework
+# Title: Node Homework
 
 ## Table Of Content
 * [Description](#description)
@@ -13,19 +13,19 @@
 
 
 ### Description
-Generates a Readme
+Homework to make a README
 
 ### Installation
-Install the dependancies then type 'npm start' into the local terminal
+Install all dependancies the run with npm start
 
 ### Usage
-I am a student in the Bootcamp
+I am a student in the bootcamp
 
 ### Contributing
-Just use the application for yourself
+Just use the app!
 
 ### Tests
-Manual Testing
+Manual testing
 
 ### Email
 junkemail@junk.com
