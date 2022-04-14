@@ -1,5 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer')
+const fs = require('fs')
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -52,8 +53,10 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-
-}
+    fs.writeFileSync(fileName, data, function(error){
+        if(error) throw error;
+    });
+};
 
 // TODO: Create a function to initialize app
 function init() {
@@ -66,7 +69,7 @@ function init() {
 * [Installation](#installation)
 * [Usage](#usage)
 * [Contributing](#contributing)
-* [Tests](tests)
+* [Tests](#tests)
 * [Email](#email)
 * [GitHubUsername](#githubusername)
 * [License](#license)
@@ -95,9 +98,10 @@ ${response.email}
 
 ### License
 ![GitHub license](https://img.shields.io/badge/license-${response.license}-blue.svg)
-![License Description](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
+
+[License Description](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
 `
-        writeToFile('README.md', markdownContent)
+        writeToFile('GenerateREADME.md', markdownContent)
     });
 };
 // Function call to initialize app
